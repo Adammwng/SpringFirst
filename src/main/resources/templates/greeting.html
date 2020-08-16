@@ -1,0 +1,27 @@
+<!--wwrsja marka z mapa i hstoria ponizej zakomentowany oryginal z tutoriala spring.io-->
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p th:text="'Hello, ' + ${name} + '!'"></p>
+<h3>history</h3>
+<div th:each="history : ${history}">
+    <input name="ver" th:value="${history.key}"/>
+    <input name="hist" th:value="${history.value}"/>
+</div>
+</body>
+</html>
+
+<!--<!DOCTYPE HTML>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>Getting Started: Serving Web Content</title>-->
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />-->
+<!--</head>-->
+<!--<body>-->
+<!--<p th:text="'Hello, ' + ${name} + '!'" />-->
+<!--</body>-->
+<!--</html>-->
